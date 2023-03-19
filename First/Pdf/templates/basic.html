@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock%}</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <script src="https://kit.fontawesome.com/5a724d24c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="logo-img" src="{% static 'logo.png'%}" alt="logo" width="100px" height="60px">
+            <ul class="nav-ul">
+                <li class="nav-li"><a class="nav-anchor" href="/xender/merge">merge pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="/xender/split">split pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="/xender/compress_pdf">compress pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="input4">convert pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="input6">edit pdf</a></li>
+            </ul>
+            <button class="login-btn"><a href="#">login</a></button>
+        </nav>
+    </header>
+
+{% block body %} {% endblock %}
+
+<footer>
+        <div class="footer">
+            <div class="f-part1">
+                <img src="{% static 'logo.png'%}" alt="logo" width="100em">
+                <p><i class="fa-solid fa-envelope"> </i><a href="mailto:info@manindra.com"> help@pdfconverter.com</a>
+                </p>
+                <p><i class="fa-solid fa-phone"></i> <a href="tel:+91-7726999262"> +91-7726999262</a></p>
+                <i class="fa-brands fa-instagram f-social"></i>
+                <i class="fa-brands fa-facebook f-social"></i>
+                <i class="fa-brands fa-twitter f-social"></i>
+                <i class="fa-brands fa-youtube f-social"></i>
+            </div>
+            <div class="f-part2">
+                <h2>tools</h2>
+                <hr style="width:40%;" color="white">
+                <ul>
+                    <li><a href="#">Merge PDF</a></li>
+                    <li><a href="#">Split PDF</a></li>
+                    <li><a href="#">Edit PDF</a></li>
+                    <li><a href="#">Compress PDF</a></li>
+                </ul>
+            </div>
+            <div class="f-part2">
+                <h2>member area</h2>
+                </h2>
+                <hr style="width:40%;" color="white">
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Forgot Password</a></li>
+                </ul>
+            </div>
+            <div class="f-part2">
+                <h2>Company</h2>
+                </h2>
+                <hr style="width:40%;" color="white">
+                <ul>
+                    <li><a href="#">Terms and Privacy</a></li>
+                    <li><a href="#">Developer API</a></li>
+                    <li><a href="#">Public Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h3>Tech Hub Pvt. Ltd. © All Rights Reserved</h3>
+        </div>
+    </footer>
+</body>
+</html>
