@@ -6,8 +6,11 @@ def index(request):
     return render(request, 'index.html')
 
 def merge(request):
-    # print(request.GET['myfile'])
+    # print(request.POST['myfile'])
     return render(request, 'merge.html')
 
 def split(request):
+    return render(request, 'split.html')
+
+def splitFile(request):
     return render(request, 'split.html')
