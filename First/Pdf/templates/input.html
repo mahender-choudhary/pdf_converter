@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%} {% endblock%}</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <script src="https://kit.fontawesome.com/5a724d24c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="logo-img" src="{% static 'logo.png'%}" alt="logo" width="100px" height="60px">
+            <ul class="nav-ul">
+                <li class="nav-li"><a class="nav-anchor" href="/Pdf/merge/">merge pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="/Pdf/split/">split pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="/xender/compress_pdf">compress pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="input4">convert pdf</a></li>
+                <li class="nav-li"><a class="nav-anchor" href="input6">edit pdf</a></li>
+            </ul>
+            <button class="login-btn"><a href="#">login</a></button>
+        </nav>
+    </header>
+
+{% block body %} {% endblock %}
+
+</body>
+</html>
