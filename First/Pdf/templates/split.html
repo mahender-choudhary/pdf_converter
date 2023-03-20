@@ -5,8 +5,8 @@
         <h1>Merge PDF Files</h1>
         <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
 <!--        <label for="upload">Select PDf Files</label>-->
-      <form action="splitFile" method="post">
-        <input name="myfile" type="text" id="upload"/>
+      <form action="/Pdf/splitFile/" method="post" enctype="multipart/form-data">
+        <input name="myfile" type="file" id="upload"/>
             <input type="submit"/>
     </form>
     </div>
