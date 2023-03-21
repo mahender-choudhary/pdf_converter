@@ -170,7 +170,7 @@
   background-color: aqua;
 }
 
-label {
+label, .re{
   background-color: rgb(224, 34, 20);
   color: white;
   padding: 1rem;
@@ -179,6 +179,8 @@ label {
   cursor: pointer;
   font-size: 25px;
 }
+
+
 .features h1{
     text-transform: uppercase;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -318,3 +320,4 @@ footer{
   justify-content: center;
   padding-bottom: 1em;
 }
+

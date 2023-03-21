@@ -1,0 +1,13 @@
+{% extends 'input.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css'%}">
+{% block body %}
+
+<br><br>
+<div class="input-c">
+<form  action = 'download'>
+    <input type="hidden" name="downloadFile" value="{{newFileName}}" />
+    <button class="re"  type="submit">Download Compressed Pdf File</button>
+</form>
+</div>
+{% endblock %}

@@ -7,4 +7,6 @@ urlpatterns = [
     path('merge/', views.merge, name = 'merge'),
     path('split/', views.split, name = 'split'),
     path('splitFile/', views.splitFile, name = 'split'),
+    path('splitFile/download/', views.download)
+
 ]
