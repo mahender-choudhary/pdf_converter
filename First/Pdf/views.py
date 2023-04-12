@@ -16,7 +16,7 @@ def merge(request):
 def split(request):
     return render(request, 'split.html')
 
-def splitFile(request):
+def compress(request):
     if request.method == 'POST':
         file = request.FILES['myfile']
         fs = FileSystemStorage()

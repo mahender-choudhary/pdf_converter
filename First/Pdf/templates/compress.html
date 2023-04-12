@@ -1,12 +1,12 @@
 {% extends 'input.html' %}
-{% block title %} Split Pdf {% endblock %}
+{% block title %} Compress PDF {% endblock %}
 {% block body %}
-  <div class="input-c">
-        <h1>Merge PDF Files</h1>
+ <div class="input-c">
+        <h1>Compress PDF File</h1>
         <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
 <!--        <label for="upload">Select PDf Files</label>-->
-      <form action="/Pdf/splitFile/" method="post" enctype="multipart/form-data">
-        <input name="myfile1" type="file" id="upload"/>
+      <form action="/Pdf/compress/" method="post" enctype="multipart/form-data">
+        <input name="myfile" type="file" id="upload"/>
             <input type="submit"/>
     </form>
     </div>
